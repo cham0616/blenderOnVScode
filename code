@@ -1,0 +1,11 @@
+import bpy
+import os
+
+script_file_path = r"your-script-file-path"
+
+with open(script_file_path, "r") as file:
+    script = file.read()
+
+exec(script)
+
+print("-------------------------------------------")
